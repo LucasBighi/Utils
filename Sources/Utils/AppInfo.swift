@@ -40,7 +40,7 @@ public struct AppInfo {
     }
     
     
-    public func infoForKey(_ key: AppInfoKey) -> String {
+    public static func infoForKey(_ key: AppInfoKey) -> String {
         guard let info = Bundle.main.infoDictionary?[key.rawValue] as? String else {
             fatalError("Unable to get Info for key \(key.rawValue)")
         }
