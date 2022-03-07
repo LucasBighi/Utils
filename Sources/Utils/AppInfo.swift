@@ -21,6 +21,8 @@ public struct AppInfo {
         //Fonts
         case primaryFontName
         case secondaryFontName
+        //Custom
+        case custom(key: String)
         
         public var rawValue: String {
             switch self {
@@ -32,6 +34,7 @@ public struct AppInfo {
             case .secondaryTextColorHEX: return "SECONDARY_TEXT_COLOR_HEX"
             case .primaryFontName: return "PRIMARY_FONT_NAME"
             case .secondaryFontName: return "SECONDARY_FONT_NAME"
+            case .custom(let key): return key
             }
         }
     }
