@@ -26,7 +26,7 @@ public struct AppInfo {
         
         public var rawValue: String {
             switch self {
-            case .baseURL: return "BASE_URL"
+            case .baseURL: return "Base URL"
             case .primaryColorHEX: return "Primary Color HEX"
             case .secondaryColorHEX: return "Secondary Color HEX"
             case .terciaryColorHEX: return "Terciary Color HEX"
