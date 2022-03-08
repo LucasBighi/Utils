@@ -27,13 +27,13 @@ public struct AppInfo {
         public var rawValue: String {
             switch self {
             case .baseURL: return "BASE_URL"
-            case .primaryColorHEX: return "PRIMARY_COLOR_HEX"
-            case .secondaryColorHEX: return "SECONDARY_COLOR_HEX"
-            case .terciaryColorHEX: return "TERCIARY_COLOR_HEX"
-            case .primaryTextColorHEX: return "PRIMARY_TEXT_COLOR_HEX"
-            case .secondaryTextColorHEX: return "SECONDARY_TEXT_COLOR_HEX"
-            case .primaryFontName: return "PRIMARY_FONT_NAME"
-            case .secondaryFontName: return "SECONDARY_FONT_NAME"
+            case .primaryColorHEX: return "Primary Color HEX"
+            case .secondaryColorHEX: return "Secondary Color HEX"
+            case .terciaryColorHEX: return "Terciary Color HEX"
+            case .primaryTextColorHEX: return "Primary Text Color HEX"
+            case .secondaryTextColorHEX: return "Secondary Text Color HEX"
+            case .primaryFontName: return "Primary Font Name"
+            case .secondaryFontName: return "Secondary Font Name"
             case .custom(let key): return key
             }
         }
