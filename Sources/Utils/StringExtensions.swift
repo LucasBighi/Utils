@@ -13,6 +13,10 @@ public extension String {
         return NSLocalizedString(self, comment: "")
     }
     
+    func localized(with args: String...) -> String {
+        return String(format: self.localized, locale: nil, arguments: args)
+    }
+    
     func removingManyOcurrences(of string: String...) -> String {
         var cleanString = self
         string.forEach { cleanString = cleanString.replacingOccurrences(of: $0, with: "") }
