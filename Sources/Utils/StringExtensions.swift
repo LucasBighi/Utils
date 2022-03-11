@@ -13,8 +13,9 @@ public extension String {
         return NSLocalizedString(self, comment: "")
     }
     
-    func localized(withArgs args: String...) -> String {
-        return String(format: self.localized, locale: nil, arguments: args)
+    func localized(withArgs args: String?...) -> String {
+        let compactArgs = args.compactMap { return $0 }
+        return String(format: self.localized, locale: nil, arguments: compactArgs)
     }
     
     func removingManyOcurrences(of string: String...) -> String {
