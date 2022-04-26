@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum Format: String {
+public enum DateFormat: String {
     /// 10:10
     case time = "HH:mm"
     /// 10/10/2010

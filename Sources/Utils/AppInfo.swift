@@ -11,13 +11,6 @@ public struct AppInfo {
     public enum AppInfoKey {
         case baseURL
         //UI
-        //Colors
-        case primaryColorHEX
-        case secondaryColorHEX
-        case terciaryColorHEX
-        //Text Colors
-        case primaryTextColorHEX
-        case secondaryTextColorHEX
         //Fonts
         case primaryFontName
         case secondaryFontName
@@ -27,11 +20,6 @@ public struct AppInfo {
         public var rawValue: String {
             switch self {
             case .baseURL: return "Base URL"
-            case .primaryColorHEX: return "Primary Color HEX"
-            case .secondaryColorHEX: return "Secondary Color HEX"
-            case .terciaryColorHEX: return "Terciary Color HEX"
-            case .primaryTextColorHEX: return "Primary Text Color HEX"
-            case .secondaryTextColorHEX: return "Secondary Text Color HEX"
             case .primaryFontName: return "Primary Font Name"
             case .secondaryFontName: return "Secondary Font Name"
             case .custom(let key): return key

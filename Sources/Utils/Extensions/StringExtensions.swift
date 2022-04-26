@@ -24,7 +24,7 @@ public extension String {
         return cleanString
     }
     
-    func toDate(withFormat format: Format) -> Date? {
+    func toDate(withFormat format: DateFormat) -> Date? {
         let format = DateFormatter.dateFormat(fromTemplate: format.rawValue, options: 0, locale: .current)!
         let formatter = DateFormatter()
         formatter.dateFormat = format
